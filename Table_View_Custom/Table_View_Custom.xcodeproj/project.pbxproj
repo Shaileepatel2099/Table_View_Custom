@@ -16,6 +16,7 @@
 		51DED8C029D34E4B004C8DF8 /* Table_View_CustomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DED8BF29D34E4B004C8DF8 /* Table_View_CustomTests.swift */; };
 		51DED8CA29D34E4B004C8DF8 /* Table_View_CustomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DED8C929D34E4B004C8DF8 /* Table_View_CustomUITests.swift */; };
 		51DED8CC29D34E4B004C8DF8 /* Table_View_CustomUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DED8CB29D34E4B004C8DF8 /* Table_View_CustomUITestsLaunchTests.swift */; };
+		51DED8D929D352BB004C8DF8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51DED8D829D352BB004C8DF8 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		51DED8C529D34E4B004C8DF8 /* Table_View_CustomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Table_View_CustomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51DED8C929D34E4B004C8DF8 /* Table_View_CustomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table_View_CustomUITests.swift; sourceTree = "<group>"; };
 		51DED8CB29D34E4B004C8DF8 /* Table_View_CustomUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table_View_CustomUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		51DED8D829D352BB004C8DF8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				51DED8B129D34E4A004C8DF8 /* Assets.xcassets */,
 				51DED8B329D34E4A004C8DF8 /* LaunchScreen.storyboard */,
 				51DED8B629D34E4A004C8DF8 /* Info.plist */,
+				51DED8D829D352BB004C8DF8 /* CustomTableViewCell.swift */,
 			);
 			path = Table_View_Custom;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				51DED8AD29D34E4A004C8DF8 /* ViewController.swift in Sources */,
 				51DED8A929D34E4A004C8DF8 /* AppDelegate.swift in Sources */,
+				51DED8D929D352BB004C8DF8 /* CustomTableViewCell.swift in Sources */,
 				51DED8AB29D34E4A004C8DF8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

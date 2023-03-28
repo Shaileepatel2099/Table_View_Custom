@@ -9,31 +9,51 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var table: UITableView!
-    var tableItems = ["Item1", "Item2", "Item3", "Item4"]
+    @IBOutlet weak var mytable: UITableView!
+    
+    struct mycell{
+        let title: String
+        let imagename: String
+    }
+    
+    let data: [mycell] =  [
+        mycell(title: "Item 1", imagename: "Image"),
+        mycell(title: "Item 2", imagename: "Image"),
+        mycell(title: "Item 3", imagename: "Image"),
+        mycell(title: "Item 4", imagename: "Image"),
+        mycell(title: "Item 5", imagename: "Image"),
+    ]
     override func viewDidLoad() {
         super.viewDidLoad()
+        mytable.delegate = self
+        mytable.dataSource = self
         // Do any additional setup after loading the view.
-    }
+        
+        }
 
 
 }
-
-extension ViewController: UITableViewDelegate, UITableViewDataSource
-{
-    func tableView (_ tableView: UITableView, numberOfRowsInSection section:Int) -> Int{
-        return tableItems.count
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = tableItems[indexPath.row]
-        return cell
-    }
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Selected \(tableItems[indexPath.row])")
+        print("Selected\(data[indexPath.row].title)")
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
+    UITableViewCell {
+        let content = data[indexPath.row]
+        let cell = mytable.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
+        cell.CellImage.image = UIImage(named: content.imagename)
+        cell.CellLabel.text = content.title
+        return cell
+    
+    }
+    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) -> CGFloat {
+        return 140
     }
     
 }
