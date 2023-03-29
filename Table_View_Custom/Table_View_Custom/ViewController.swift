@@ -52,7 +52,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     
     }
-    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
     }
     
