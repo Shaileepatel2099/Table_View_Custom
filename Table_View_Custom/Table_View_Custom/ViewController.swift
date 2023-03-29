@@ -13,15 +13,18 @@ class ViewController: UIViewController {
     
     struct mycell{
         let title: String
+        let mark: String
+        let grade: String
         let imagename: String
     }
     
     let data: [mycell] =  [
-        mycell(title: "Item 1", imagename: "Image"),
-        mycell(title: "Item 2", imagename: "Image"),
-        mycell(title: "Item 3", imagename: "Image"),
-        mycell(title: "Item 4", imagename: "Image"),
-        mycell(title: "Item 5", imagename: "Image"),
+        mycell(title: "Shailee", mark: "90",grade: "A", imagename: "Image"),
+        mycell(title: "Bhumi", mark: "98",grade: "A+", imagename: "Image"),
+        mycell(title: "Ketul", mark: "96",grade: "A+", imagename: "Image"),
+        mycell(title: "Harshil", mark: "93",grade: "A", imagename: "Image"),
+        mycell(title: "Kruti", mark: "88",grade: "B", imagename: "Image"),
+        
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +44,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Selected\(data[indexPath.row].title)")
+        print("Selected\(data[indexPath.row].mark)")
+        print("Selected\(data[indexPath.row].grade)")
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->
@@ -49,6 +54,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = mytable.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
         cell.CellImage.image = UIImage(named: content.imagename)
         cell.CellLabel.text = content.title
+        cell.CellMarks.text = content.mark
+        cell.CellGrade.text = content.grade
+        
         return cell
     
     }

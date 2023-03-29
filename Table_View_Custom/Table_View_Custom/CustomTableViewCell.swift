@@ -11,6 +11,8 @@ class CustomTableViewCell: UITableViewCell {
 
     @IBOutlet weak var CellImage: UIImageView!
     @IBOutlet weak var CellLabel: UILabel!
+    @IBOutlet weak var CellMarks: UILabel!
+    @IBOutlet weak var CellGrade: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

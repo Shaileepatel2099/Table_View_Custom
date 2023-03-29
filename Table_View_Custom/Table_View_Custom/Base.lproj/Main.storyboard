@@ -31,10 +31,22 @@
                                                     <rect key="frame" x="20" y="11" width="353" height="118"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JuP-mP-kYv">
-                                                            <rect key="frame" x="0.0" y="0.0" width="169" height="118"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="77" height="118"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBu-Tm-ee9">
-                                                            <rect key="frame" x="184" y="0.0" width="169" height="118"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBu-Tm-ee9">
+                                                            <rect key="frame" x="92" y="0.0" width="77" height="118"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xwp-hT-7Hm">
+                                                            <rect key="frame" x="184" y="0.0" width="77" height="118"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKT-or-xca">
+                                                            <rect key="frame" x="276" y="0.0" width="77" height="118"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -50,8 +62,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="CellGrade" destination="PKT-or-xca" id="Sgg-iG-98P"/>
                                             <outlet property="CellImage" destination="JuP-mP-kYv" id="5lx-jQ-1ql"/>
                                             <outlet property="CellLabel" destination="qBu-Tm-ee9" id="Lpf-29-tLK"/>
+                                            <outlet property="CellMarks" destination="Xwp-hT-7Hm" id="RR3-2M-387"/>
                                             <outlet property="cellimage" destination="JuP-mP-kYv" id="YiU-gC-wBj"/>
                                             <outlet property="celllabel" destination="qBu-Tm-ee9" id="Hbt-kL-qUU"/>
                                         </connections>
